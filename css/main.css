@@ -1,4 +1,10 @@
 html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
   background-color: #fdf6e3;
 }
 
@@ -10,10 +16,29 @@ nav ul {
   font-family: sans-serif;
 }
 
-.class logo {
+.logo {
   text-transform: uppercase;
 }
 
-.class wrapper {
+.wrapper {
   background-color: #eee8d5;
+}
+
+#contents #favs #facts #types {
+  color: #93a1a1;
+}
+
+.wrapper >.dnf{
+  background-color: #b58900;
+}
+.wrapper >.dfn >strong {
+  color: #fff;
+}
+
+a:not(.no-highlight){
+  background-color: #719e07;
+}
+
+[rel="external"]{
+  background-color: #2694d8;
 }
